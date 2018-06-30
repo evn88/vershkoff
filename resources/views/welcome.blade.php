@@ -69,11 +69,11 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Главная</a>
+                        <a href="{{ url('/') }}">Главная</a>
                         <a href="{{ url('/albums') }}">Альбомы</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        {{-- <a href="{{ route('register') }}">Register</a> --}}
                     @endauth
                 </div>
             @endif
@@ -82,7 +82,7 @@
                 <div class="title m-b-md">
                     Vershkoff.ru
                 </div>
-
+                <div id="app"></div>
             </div>
         </div>
     </body>
