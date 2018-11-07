@@ -50,7 +50,7 @@ main {
     grid-gap: 20px;
     grid-auto-flow: row;
 
-    margin: 0 auto;
+    margin: 0px auto 30px;
     background-color: $body-bg;
     justify-content: center;
 }
@@ -90,5 +90,18 @@ main > a {
  main > a:hover > span {
      display: inline;
      position: absolute;
+ }
+
+ footer {
+     min-height: 50px;
+    //  border-radius: 10px 10px 0 0;
+    //  margin: 10px;
+     padding: 30px;
+    //  background-color: #d0d0f5;
+ }
+
+ footer > .wrapper {
+    color: black;
+    text-align: center;
  }
 

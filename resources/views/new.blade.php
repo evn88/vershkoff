@@ -82,7 +82,14 @@
             <span>Название альбома 1</span>
         </a>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+           2018 © Anna Vershkova <br>
+           Профессиональный фотограф Волгоград <br>
+            <a href="/sendme">Написать мне</a>
+        </div>
+        <div class="bottom"></div>
+    </footer>
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

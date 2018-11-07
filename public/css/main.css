@@ -417,7 +417,7 @@ main {
   grid-template-rows: 260px;
   grid-gap: 20px;
   grid-auto-flow: row;
-  margin: 0 auto;
+  margin: 0px auto 30px;
   background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -460,5 +460,15 @@ main > a > span {
 main > a:hover > span {
   display: inline;
   position: absolute;
+}
+
+footer {
+  min-height: 50px;
+  padding: 30px;
+}
+
+footer > .wrapper {
+  color: black;
+  text-align: center;
 }
 
