@@ -30,47 +30,47 @@
     </header>
     <main class="grid">
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория" width="300" height="225" style="opacity: 1;">    
+            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG">    
             <span>Название альбома 1 Очень длинное название альбома которого не существует. А еще может быть во всем этом виноват котик? Может быть это он все сломал?</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
-            <span>Название альбома 2</span>
+            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория">   
+            <span>Черногория</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
-            <span>Название альбома 3</span>
+            <img src="http://vershkoff.ru/storage/cache/images/000/052/IMG-7037veb,300.225.85.60.crop.2x.1534586460.jpg" alt="Черногория">   
+            <span>Наталья с Варенькой и Зоей</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория" width="300" height="225" style="opacity: 1;">    
-            <span>Название альбома 4</span>
+            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория">    
+            <!-- <span>Название альбома 4</span> -->
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
+            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория">   
             <span>Название альбома 5</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория" width="300" height="225" style="opacity: 1;">    
+            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG">    
             <span>Название альбома 6</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
+            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория">   
             <span>Название альбома 1</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория" width="300" height="225" style="opacity: 1;">    
+            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория">    
             <span>Название альбома 1</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
+            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория">   
             <span>Название альбома 1</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория" width="300" height="225" style="opacity: 1;">    
+            <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG" alt="Черногория">    
             <span>Название альбома 1</span>
         </a>
         <a href="#">
-            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория" width="300" height="225" style="opacity: 1;">   
+            <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="Черногория">   
             <span>Название альбома 1</span>
         </a>
         <a href="#">
