@@ -8,6 +8,9 @@
 body {
     background-color: $body-bg;
     font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 1200px;
+    min-width: 374px;
+    margin: 0 auto;
 }
 
 .grid {
@@ -16,9 +19,8 @@ body {
 }
 
 header {
-    padding: 30px;
+    padding: 40px 0px 10px 0px;
     text-align: center;
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 // навигация
@@ -34,7 +36,7 @@ nav a {
 }
 
 nav a:hover{
-    color: #9999d9;
+    color: $color-purple;
 }
 
 .custom_logo {
@@ -47,11 +49,10 @@ main {
     grid-template-rows: 260px;
     grid-gap: 20px;
     grid-auto-flow: row;
-    max-width: 1200px;
+
     margin: 0 auto;
     background-color: $body-bg;
     justify-content: center;
-    // position: relative;
 }
 
 main > a > img {
@@ -73,7 +74,7 @@ main > a {
  }
 
  main > a > span {
-    max-width: 340px;
+     max-width: 340px;
      display: none;
      padding: 5px; 
      font-size: 16pt;
@@ -87,7 +88,7 @@ main > a {
  }
  
  main > a:hover > span {
-     display: block;
+     display: inline;
      position: absolute;
  }
 
