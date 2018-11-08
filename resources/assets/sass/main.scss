@@ -45,23 +45,26 @@ nav a:hover{
 }
 
 main {
-    grid-template-columns: repeat(auto-fit, 350px);
-    grid-template-rows: 260px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    // grid-template-rows: 260px;
     grid-gap: 20px;
     grid-auto-flow: row;
 
-    margin: 0px auto 30px;
+    // margin: 0px auto 30px;
     background-color: $body-bg;
     justify-content: center;
 }
 
 main > a > img {
-    width: 350px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
+    // width: 350px;
+    // height: 260px;
+    object-fit: cover;
 }
 
 main > a {
-    width: 350px;
+    // width: 350px;
     height: 260px;
     position: relative;
     text-decoration: none;
