@@ -47,7 +47,7 @@ nav a:hover{
 main {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     // grid-template-rows: 260px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-auto-flow: row;
 
     // margin: 0px auto 30px;
@@ -57,42 +57,45 @@ main {
 
 main > a > img {
     width: 100%;
-    height: 100%;
-    // width: 350px;
-    // height: 260px;
+    height: 260px;
+    // border-radius: 30px;
     object-fit: cover;
 }
 
 main > a {
-    // width: 350px;
-    height: 260px;
-    position: relative;
+    // height: 260px;
+    // position: relative;
     text-decoration: none;
 }
- main > a:hover {
-    color: $color-purple;
-    background-color: $color-purple;
+main > a:hover {
+    // color: $color-purple;
+    // background-color: $color-purple;
     z-index: 1;
     opacity: 0.8;
- }
+}
 
- main > a > span {
-     max-width: 340px;
-     display: none;
-     padding: 5px; 
+main > a > span {
+    max-width: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+     padding-top: 5px; 
      font-size: 16pt;
      text-overflow: ellipsis;
      white-space: nowrap; 
      overflow: hidden;
-     color: white;
-     background-color: $color-purple;
-     top: 80%;
-     left: 0;
+     color: #7a7a7a;
+    //  background-color: $color-purple;
+    //  top: 75%;
+    //  left: 0;
+    //  border-top-right-radius: 15px;
+    //  border-bottom-right-radius: 15px;
  }
  
  main > a:hover > span {
-     display: inline;
-     position: absolute;
+     color: $color-purple;
+    //  display: inline;
+    //  position: absolute;
  }
 
  footer {
