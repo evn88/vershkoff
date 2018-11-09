@@ -460,8 +460,9 @@ footer {
   padding: 30px;
 }
 
-footer > .wrapper {
-  color: black;
+footer > .wrapper,
+a {
+  color: #bdbcbc;
   text-align: center;
 }
 
