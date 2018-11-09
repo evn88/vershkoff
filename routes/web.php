@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 //Для верстки шаблона
-Route::get('/new', function () {
-    return view('new');
+Route::get('/albums', function () {
+    return view('albums');
 });
 
 Auth::routes();
