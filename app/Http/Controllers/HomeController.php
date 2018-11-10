@@ -32,6 +32,6 @@ class HomeController extends Controller
         // dd(Role::all());
         // $role = Role::findById(1);
         // dd( User::find(1));
-        return view('home');
+        return view('admin');
     }
 }

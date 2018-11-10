@@ -12,14 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('albums');
 });
 
-//Для верстки шаблона
 Route::get('/albums', function () {
     return view('albums');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['namespace'=>'Admin', 'prefix'=>'admin'], function(){
+        return view('admin.index');
+});

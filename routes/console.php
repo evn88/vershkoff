@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Inspiring;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,11 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('update', function(){
+    $this->info('Обновление Laravel. Сделайте резервную копию перед обновлением!');
+    if ($this->confirm('Начнем?')) {
+        Artisan::call('composer update');
+        $this->cooment('updated!');
+    }
+})->describe('Обновление Laravel');
