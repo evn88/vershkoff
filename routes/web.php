@@ -19,6 +19,14 @@ Route::get('/albums', function () {
     return view('albums');
 });
 
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 Auth::routes();
 
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin'], function(){
