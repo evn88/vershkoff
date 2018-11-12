@@ -18,12 +18,10 @@ header {
     padding: 40px 0px 10px 0px;
     text-align: center;
     .custom_logo {
-        // text-align: center;
         margin: 0 auto;
     }
 }
 
-// навигация
 nav ul, li {
     display: inline-block;
     padding: 7px;
@@ -37,9 +35,9 @@ nav ul, li {
     }
 }
 
-@import "albums/albums";
-@import "blog/blog";
-@import "about/about";
+@import "pages/albums";
+@import "pages/blog";
+@import "pages/about";
 
  footer {
      min-height: 50px;
