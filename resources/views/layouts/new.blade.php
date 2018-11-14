@@ -10,7 +10,9 @@
 </head>
 <body>
     <header class="grid">
-        <img src="http://vershkoff.ru/storage/cache/images/000/405/logo1,medium.1534409687.png" alt="Анна Вершкова" class="custom_logo">
+        <a href="/">
+            <img src="http://vershkoff.ru/storage/cache/images/000/405/logo1,medium.1534409687.png" alt="Анна Вершкова" class="custom_logo">
+        </a>
         <nav>
             <ul>
                 <li><a title="Альбомы" href="/albums">Альбомы</a></li>
