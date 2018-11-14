@@ -30,5 +30,5 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin'], function(){
-        return view('admin.index');
+        Route::get('/', 'AdminController@index');
 });
