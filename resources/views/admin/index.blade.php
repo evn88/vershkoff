@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="grid container">
+<div class="grid container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Admin Dashboard</div>
+                <div class="card-header">Приветствие</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Привет {{ Auth::user()->name }} 
                 </div>
             </div>
         </div>
