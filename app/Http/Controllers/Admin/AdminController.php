@@ -15,7 +15,6 @@ class AdminController extends Controller
 
     public function index()
     {
-        // $thisuser = User::getAll();
-        return view('admin.index');
+         return view('admin.index');
     }
 }

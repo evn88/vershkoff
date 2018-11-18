@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AlbumsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +33,6 @@ Auth::routes();
 
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin'], function(){
         Route::get('/', 'AdminController@index');
+        Route::get('/albums', 'AlbumsController@index');
+        Route::get('/albums/{id}', 'AlbumsController@showAlbum');
 });
