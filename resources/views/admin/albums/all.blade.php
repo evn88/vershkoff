@@ -15,7 +15,7 @@
                             <span>Альбомы</span>
                         </div>
                         <div class="col-md-6 text-right">
-                            <a href="#" class="btn btn-primary">+ добавить альбом</a>
+                            <a href="{{ route('admin.album.create') }}" class="btn btn-primary">+ добавить альбом</a>
                         </div>
                     </div>
                 </div>
@@ -23,9 +23,9 @@
                 <div class="card-body">
 
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>         
-                        <a href="#" class="list-group-item list-group-item-action">Альбом 2</a>         
-                        <a href="#" class="list-group-item list-group-item-action">Альбом 3</a>         
+                        <a href="#" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>               
+                        <a href="#" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>               
+                        <a href="#" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>               
                     </div> <!-- end list-group -->
 
                 </div>  <!-- end card -->

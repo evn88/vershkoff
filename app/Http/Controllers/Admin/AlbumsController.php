@@ -21,7 +21,7 @@ class AlbumsController extends AdminController
      * @param int $id
      * @return Response
      */
-    public function showAlbum($id){
+    public function show($id){
         return view('admin.albums.view', ['photos' => Photos::findOrFail($id)]);
     }
 }

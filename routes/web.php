@@ -31,8 +31,9 @@ Route::get('/about', function () {
 
 Auth::routes();
 
-Route::group(['namespace'=>'Admin', 'prefix'=>'admin'], function(){
-        Route::get('/', 'AdminController@index');
-        Route::get('/albums', 'AlbumsController@index');
-        Route::get('/albums/{id}', 'AlbumsController@showAlbum');
+// Admin
+Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware' => 'auth'], function(){
+        Route::get('/', ['uses' => 'AdminController@index', 'as'=>'admin.index']);
+        Route::get('/albums', ['uses'=>'AlbumsController@index', 'as'=>'admin.albums']);
+        Route::get('/albums/{id}', ['uses'=>'AlbumsController@show', 'as'=>'admin.album.show']);
 });

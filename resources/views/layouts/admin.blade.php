@@ -36,21 +36,22 @@
                     <ul class="navbar-nav mr-auto">
                     @guest
                     @else
-                    <!-- TODO: Изучить {{ route('login') }} -->
-                            <li><a class="nav-link" href="/admin">Главная</a></li>
-                            <li><a class="nav-link" href="/admin/albums">Альбомы</a></li>
-                            <li><a class="nav-link" href="/admin/blog">Блог</a></li>
-                            <li><a class="nav-link" href="/admin/about">Обо мне</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.index') }}">Главная</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.albums') }}">Альбомы</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.blog') }}">Блог</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.about') }}">Обо мне</a></li>
                     @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+
                         <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
+                            <li><a class="nav-link" href="/">Перейти на сайт</a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
