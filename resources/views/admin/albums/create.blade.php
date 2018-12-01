@@ -5,11 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Имя альбома</div>
+                <div class="card-header">Создать альбом</div>
 
                 <div class="card-body">
-
-                    Тут будут фотки
+                    <!-- TODO: Создать форму -->
                 </div>
             </div>
         </div>

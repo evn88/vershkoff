@@ -16,12 +16,16 @@ class AlbumsController extends AdminController
         return view('admin.albums.all', ['albums' => 'test']);
     }
 
+    public function create(){
+        return view('admin.albums.create');
+    }
+
      /**
      * Show album.
      * @param int $id
      * @return Response
      */
     public function show($id){
-        return view('admin.albums.view', ['photos' => Photos::findOrFail($id)]);
+        return view('admin.albums.view', ['photos' => '']);
     }
 }

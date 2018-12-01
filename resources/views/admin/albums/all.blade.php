@@ -15,7 +15,7 @@
                             <span>Альбомы</span>
                         </div>
                         <div class="col-md-6 text-right">
-                            <a href="{{ route('admin.album.create') }}" class="btn btn-primary">+ добавить альбом</a>
+                            <a href="{{ route('admin.albums.create') }}" class="btn btn-primary">+ создать альбом</a>
                         </div>
                     </div>
                 </div>
