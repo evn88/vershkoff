@@ -20,6 +20,11 @@ class AlbumsController extends AdminController
         return view('admin.albums.create');
     }
 
+    public function store(){
+        $test = "SAVED!!!";
+        return view('admin.albums.create', compact(['test']));
+    }
+
      /**
      * Show album.
      * @param int $id

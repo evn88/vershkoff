@@ -37,6 +37,7 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware' => 'auth'], 
         Route::get('/albums', ['uses'=>'AlbumsController@index', 'as'=>'admin.albums']);
         Route::get('/albums/{id}', ['uses'=>'AlbumsController@show', 'as'=>'admin.albums.show'])->where('id', '[0-9]+');
         Route::get('/albums/create', ['uses'=>'AlbumsController@create', 'as'=>'admin.albums.create']);
+        Route::post('/albums/store', ['uses'=>'AlbumsController@store', 'as'=>'admin.albums.store']);
         Route::get('/blog', ['uses' => 'AdminController@index', 'as'=>'admin.blog']);
         Route::get('/about', ['uses' => 'AdminController@index', 'as'=>'admin.about']);
 });

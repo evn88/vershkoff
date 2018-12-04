@@ -12,10 +12,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-md-6 text-left">
-                            <span>Альбомы</span>
+                            <h3>Альбомы</h3>
                         </div>
                         <div class="col-md-6 text-right">
-                            <a href="{{ route('admin.albums.create') }}" class="btn btn-primary">+ создать альбом</a>
+                            <a href="{{ route('admin.albums.create') }}" class="btn btn-primary">Cоздать альбом</a>
                         </div>
                     </div>
                 </div>
