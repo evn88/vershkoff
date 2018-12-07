@@ -3,7 +3,7 @@
 @section('content')
 <div class="grid container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
                 <div class="row">
@@ -13,15 +13,15 @@
                 </div>
 
                 <div class="card-body">
-                    @include('errors.form')
-                    <!-- TODO: Создать форму -->
+                    
                     {!! Form::open(['action' => 'Admin\AlbumsController@store']) !!}
                     @if(isset($test))
-                        {{ $test }}
+                    {{ $test }}
                     @endif
-                    <!-- {{ csrf_field() }} -->
-                        @include('admin.albums.__form')
+                    
+                    @include('admin.albums.__form')
                     {!! Form::close() !!}
+                    @include('errors.form')
                 </div>
             </div>
         </div>
