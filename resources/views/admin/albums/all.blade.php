@@ -24,17 +24,15 @@
 
                     <div class="list-group">
                         @foreach ($albums as $album)
-                    <a href="{{ route('admin.albums.show',['id'=>$album->id]) }}" class="list-group-item list-group-item-action">
+                            <a href="{{ route('admin.albums.show',['id'=>$album->id]) }}" class="list-group-item list-group-item-action">
                                 <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" 
-                                alt="{{ $album->name }}" 
-                                class="img" 
-                                height="150px">
+                                  alt="{{ $album->name }}" 
+                                  class="img" 
+                                  height="150px">
                                 <h4>{{ $album->name }}</h4>
                                 <p class="well">{{ $album->description }}</p>
-                    </a>               
+                            </a>               
                         @endforeach
-                        {{-- <a href="{{ route('admin.albums.show',['id'=>2]) }}" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>                --}}
-                        {{-- <a href="{{ route('admin.albums.show',['id'=>3]) }}" class="list-group-item list-group-item-action"><img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" alt="" class="img" height="150px"> Альбом 1</a>                --}}
                     </div> <!-- end list-group -->
 
                 </div>  <!-- end card -->

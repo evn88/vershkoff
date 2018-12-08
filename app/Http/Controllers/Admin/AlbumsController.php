@@ -33,7 +33,6 @@ class AlbumsController extends AdminController
         $albums->save();  
         
         return redirect(route('admin.albums'));
-        // return view('admin.albums.create', compact(['test']));
     }
 
      /**
@@ -42,6 +41,7 @@ class AlbumsController extends AdminController
      * @return Response
      */
     public function show($id){
-        return view('admin.albums.view', ['photos' => '']);
+        $album = Albums::findOrFail($id);
+        return view('admin.albums.view', ['album' => $album]);
     }
 }
