@@ -1,12 +1,16 @@
-
+@import "libs";
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
 .navbar-laravel {
   background-color: #fff;

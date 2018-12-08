@@ -24,13 +24,16 @@
 
                     <div class="list-group">
                         @foreach ($albums as $album)
-                            <a href="{{ route('admin.albums.show',['id'=>$album->id]) }}" class="list-group-item list-group-item-action">
+                        <a href="{{ route('admin.albums.show', ['id'=>$album->id]) }}" class="list-group-item list-group-item-action">
                                 <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" 
                                   alt="{{ $album->name }}" 
                                   class="img img-left" 
                                   height="150px">
                                 <span class="text-right">
-                                    <h4>{{ $album->name }}</h4>
+                                    <h4>
+                                        {{ $album->name }}
+                                        <span class="badge badge-secondary">{{ $album->status }}</span>
+                                    </h4>
                                     <p class="well">{{ $album->description }}</p>
                                 </span>
                             </a>               
