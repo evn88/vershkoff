@@ -27,7 +27,7 @@
                             <a href="{{ route('admin.albums.show',['id'=>$album->id]) }}" class="list-group-item list-group-item-action">
                                 <img src="http://vershkoff.ru/storage/cache/images/000/754/IMG-6998v,300.225.85.60.crop.2x.1539160432.jpg" 
                                   alt="{{ $album->name }}" 
-                                  class="img" 
+                                  class="img img-left" 
                                   height="150px">
                                 <span class="text-right">
                                     <h4>{{ $album->name }}</h4>
