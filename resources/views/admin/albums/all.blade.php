@@ -29,8 +29,10 @@
                                   alt="{{ $album->name }}" 
                                   class="img" 
                                   height="150px">
-                                <h4>{{ $album->name }}</h4>
-                                <p class="well">{{ $album->description }}</p>
+                                <span class="text-right">
+                                    <h4>{{ $album->name }}</h4>
+                                    <p class="well">{{ $album->description }}</p>
+                                </span>
                             </a>               
                         @endforeach
                     </div> <!-- end list-group -->
