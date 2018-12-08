@@ -1,2 +1,2 @@
 # vershkoff
-my website for publicate photos
+website for photographers
