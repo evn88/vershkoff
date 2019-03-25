@@ -10,7 +10,6 @@ class AlbumsController extends AdminController
 {
      /**
      * Show all albums page.
-     *
      * @return object
      */
     public function index(){
@@ -30,9 +29,26 @@ class AlbumsController extends AdminController
     public function store(Request $request){
         $albums = new Albums;
         $albums->fill($request->all());
-        $albums->save();  
+        $albums->save();
         
         return redirect(route('admin.albums'));
+    }
+
+      /**
+     * Edit album
+     * @param object $request
+     * @return redirect
+     */
+    public function edit($id)
+    {
+        $album = Albums::findOrFail($id);
+        return view('admin.albums.edit', ['album' => $album]);
+    }
+
+    public function update($id)
+    {
+        $album = Albums::findOrFail($id);
+        return view('admin.albums.edit', ['album' => $album]);
     }
 
      /**

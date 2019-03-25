@@ -9,7 +9,8 @@
                     <div class="row">
                             <div class="col-md-6 text-left"><h3>{{ $album->name }}</h3></div>
                             <div class="col-md-6 text-right">
-                                <a href="{{ url('admin/albums')}}" class="btn btn-danger">Удалить альбом</a>
+                                <a href="{{ url('admin/albums/'.$album->id.'/delete')}}" class="btn btn-danger">Удалить альбом</a>
+                                <a href="{{ url('admin/albums/'.$album->id.'/edit')}}" class="btn btn-light">Редактировать</a>
                                 <a href="{{ url('admin/albums')}}" class="btn btn-light">Назад</a>
                             </div>
                     </div>
