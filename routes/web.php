@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AlbumsController;
+use App\models\Albums;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +14,22 @@ use App\Http\Controllers\Admin\AlbumsController;
 |
 */
 
-Route::get('/', function () {
-    return view('albums');
-});
 
-Route::get('/albums', function () {
-    return view('albums');
-});
+// Route::get('/', function () {
+//     return view('albums');
+// });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+// Route::get('/albums', function () {
+//     return view('albums');
+// });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/blog', function () {
+//     return view('blog');
+// });
+
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
 Auth::routes();
 
@@ -44,3 +46,6 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware' => 'auth'], 
         Route::get('/blog', ['uses' => 'AdminController@index', 'as'=>'admin.blog']);
         Route::get('/about', ['uses' => 'AdminController@index', 'as'=>'admin.about']);
 });
+
+// отправляем все запросы в SPA роутер которого находится в \resources\assets\js\app.js
+Route::get('/{any}', 'SpaController@index')->where('any', '.*');

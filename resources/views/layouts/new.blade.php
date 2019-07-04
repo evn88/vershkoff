@@ -9,7 +9,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header class="grid">
+    {{-- <header class="grid">
         <a href="/">
             <img src="http://vershkoff.ru/storage/cache/images/000/405/logo1,medium.1534409687.png" alt="Анна Вершкова" class="custom_logo">
         </a>
@@ -21,9 +21,9 @@
             </ul>
         </nav>
     </header>
-    <main class="grid">
+    <main class="grid"> --}}
         @yield('content')
-    </main>
+    {{-- </main>
     <footer>
         <div class="wrapper">
            2018 © Anna Vershkova <br>
@@ -31,7 +31,7 @@
             <a href="/sendme">Написать мне</a>
         </div>
         <div class="bottom"></div>
-    </footer>
+    </footer> --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

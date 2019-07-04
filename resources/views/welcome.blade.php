@@ -99,7 +99,6 @@
                 <div class="title m-b-md">
                     Vershkoff.ru
                 </div>
-                <div id="app"></div>
             </div>
         </div>
     </body>

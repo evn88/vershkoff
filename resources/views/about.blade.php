@@ -1,6 +1,7 @@
 @extends('layouts.new')
 
 @section('content')
+<example-component></example-component>
 <div class="grid about">
  	<h1>Обо мне</h1>
  	<h2><b><i>Привет, давайте знакомиться?</i></b><br></h2>

@@ -1,6 +1,4 @@
 @import "libs";
-// Fonts
-// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
@@ -8,8 +6,16 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// albums grid
+@import "pages/albums";
+
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+.grid {
+  display: grid;
 }
 
 .navbar-laravel {
@@ -20,3 +26,32 @@ body {
 .img-left {
   float: left;
 }
+
+#container-btn{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+
+  .floating-button {
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: 25pt;
+    text-align: center;
+    border-radius: 50%;
+    
+    a {
+      text-decoration: none;
+    }
+  }
+  .floating-button:hover {
+    background-color: rgba(250, 84, 84, 0.733);
+
+  }
+}
+
+
+

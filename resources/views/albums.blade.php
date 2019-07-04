@@ -1,6 +1,7 @@
 @extends('layouts.new')
 
 @section('content')
+
 <div class="grid albums">
     <a href="#">
         <img src="http://vershkoff.ru/storage/cache/images/000/607/IMG-5553,300.225.85.60.crop.2x.1534768508.JPG">    
