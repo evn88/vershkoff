@@ -36,13 +36,13 @@ Auth::routes();
 // Admin
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware' => 'auth'], function(){
         Route::get('/', ['uses' => 'AdminController@index', 'as'=>'admin.index']);
-        Route::get('/albums', ['uses'=>'AlbumsController@index', 'as'=>'admin.albums']);
-        Route::get('/albums/{id}', ['uses'=>'AlbumsController@show', 'as'=>'admin.albums.show'])->where('id', '[0-9]+');
-        Route::get('/albums/{id}/edit', ['uses'=>'AlbumsController@edit', 'as'=>'admin.albums.edit']);
-        Route::post('/albums/{id}/update', ['uses'=>'AlbumsController@update', 'as'=>'admin.albums.update']);
-        Route::get('/albums/create', ['uses'=>'AlbumsController@create', 'as'=>'admin.albums.create']);
-        Route::post('/albums/store', ['uses'=>'AlbumsController@store', 'as'=>'admin.albums.store']);
-        // Route::resource('albums', ['uses'=>'Admin\AlbumsController', 'as'=>'admin.albums']);
+        // Route::get('/albums', ['uses'=>'AlbumsController@index', 'as'=>'admin.albums']);
+        // Route::get('/albums/{id}', ['uses'=>'AlbumsController@show', 'as'=>'admin.albums.show'])->where('id', '[0-9]+');
+        // Route::get('/albums/{id}/edit', ['uses'=>'AlbumsController@edit', 'as'=>'admin.albums.edit']);
+        // Route::patch('/albums/{id}/update', ['uses'=>'AlbumsController@update', 'as'=>'admin.albums.update']);
+        // Route::get('/albums/create', ['uses'=>'AlbumsController@create', 'as'=>'admin.albums.create']);
+        // Route::post('/albums/store', ['uses'=>'AlbumsController@store', 'as'=>'admin.albums.store']);
+        Route::resource('albums', 'AlbumsController',  ['as' => 'admin']);
         Route::get('/blog', ['uses' => 'AdminController@index', 'as'=>'admin.blog']);
         Route::get('/about', ['uses' => 'AdminController@index', 'as'=>'admin.about']);
 });

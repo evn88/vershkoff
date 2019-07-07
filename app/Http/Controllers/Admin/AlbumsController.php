@@ -31,7 +31,7 @@ class AlbumsController extends AdminController
         $albums->fill($request->all());
         $albums->save();
         
-        return redirect(route('admin.albums'));
+        return redirect(route('admin.albums.index'));
     }
 
       /**
@@ -45,10 +45,16 @@ class AlbumsController extends AdminController
         return view('admin.albums.edit', ['album' => $album]);
     }
 
-    public function update($id)
+    public function update(Request $request, Albums $album)
     {
-        $album = Albums::findOrFail($id);
-        return view('admin.albums.edit', ['album' => $album]);
+        $album->update($request->all());
+       return redirect(route('admin.albums.index'));
+    }
+
+    public function destroy(Albums $album)
+    {
+        $album->delete();
+        return redirect(route('admin.albums.index'));
     }
 
      /**

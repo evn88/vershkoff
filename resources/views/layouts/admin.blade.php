@@ -37,7 +37,7 @@
                     @guest
                     @else
                         <li><a class="nav-link" href="{{ route('admin.index') }}">Главная</a></li>
-                        <li><a class="nav-link" href="{{ route('admin.albums') }}">Альбомы</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.albums.index') }}">Альбомы</a></li>
                         <li><a class="nav-link" href="{{ route('admin.blog') }}">Блог</a></li>
                         <li><a class="nav-link" href="{{ route('admin.about') }}">Обо мне</a></li>
                     @endguest
